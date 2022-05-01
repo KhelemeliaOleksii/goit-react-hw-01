@@ -1,16 +1,27 @@
+import {Profile} from './profile/profile'
+import userJSON from "./profile/user.json"
+import PropTypes from 'prop-types';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Profile {...userJSON} />
   );
 };
+
+Profile.propTypes = {
+  user: PropTypes.shape({
+    username : PropTypes.string,
+    tag : PropTypes.string,
+    location : PropTypes.shape({
+      city : PropTypes.string,
+      country : PropTypes.string,
+    }), 
+    avatar : PropTypes.string,
+    stats : PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ])
+  }),
+}
+
+
