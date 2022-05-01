@@ -1,5 +1,5 @@
+//import {noImageAvailable} from './no-image-available.png'
 export const Description = ({ username, tag, location, avatar }) => {
-    // console.log(username);
     return (
         <div className="description">
             <img
