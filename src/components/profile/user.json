@@ -7,8 +7,8 @@
     },
     "avatar" : "https://scontent-frx5-1.xx.fbcdn.net/v/t1.6435-1/127107871_3590359577707388_973946896511385187_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=100&ccb=1-5&_nc_sid=7206a8&_nc_ohc=eC3IocNELikAX_V5Y9e&_nc_ht=scontent-frx5-1.xx&oh=00_AT_8ueLXUxFM5364ROKOkrH63MrUlHXQgYeY7AUSSl6gyQ&oe=62931F22",
     "stats" : [
-        {"key": "Followers",  "value" : "100"},
-        {"key": "Views",  "value" : "4,000"},
-        {"key": "Likes",  "value" : "100"}
+        {"key": "Followers",  "value" : 100},
+        {"key": "Views",  "value" : 4000},
+        {"key": "Likes",  "value" : 100}
     ]
 }
