@@ -12,8 +12,6 @@ import data from './statistics/data.json';
 import { TransactionHistory } from './transactionHistory/transactionHistory';
 import transactions from './transactionHistory/transactions.json';
 
-// import './Proptypes' ;
-
 export const App = () => {
   return (
     <>
