@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import { Profile } from './profile/profile';
 
 import { FriendList } from './friendList/friendList';
