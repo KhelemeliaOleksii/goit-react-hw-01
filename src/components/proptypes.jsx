@@ -3,7 +3,7 @@ import { Profile } from './profile/profile';
 
 import { FriendList } from './friendList/friendList';
 
-import { Statistics } from './statistics/statisticsForm';
+import { Statistics } from './statistics/Statistics';
 
 import { TransactionHistory } from './transactionHistory/transactionHistory';
 

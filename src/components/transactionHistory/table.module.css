@@ -29,3 +29,8 @@
 .table tr:nth-of-type(2n) {
     background-color: rgba(0,0,0,0.1);
 }
+.table__header{
+    background-color: aquamarine;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
