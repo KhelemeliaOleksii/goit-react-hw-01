@@ -1,4 +1,7 @@
-import styles from './form.module.css'
+import styles from './form.module.css';
+
+import PropTypes from 'prop-types';
+
 export function Statistics({ title = "", stats }) {
   const statisticsFormStyle = [styles.form]
   const titleStyle = [styles.title];
@@ -25,6 +28,15 @@ export function Statistics({ title = "", stats }) {
   )
 }
 
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired,
+  )
+}
 
 function getRandomColor () {
   return ("#"+ Math.floor(Math.random()*16777215).toString(16));

@@ -1,5 +1,7 @@
 import styles from './profile.module.css';
 
+import PropTypes from 'prop-types';
+
 export const Profile = ({avatar, location, username, tag, stats}) => {
     const cardStyle = [styles.profile];
     const descrStyle = [styles.description];
@@ -34,3 +36,20 @@ export const Profile = ({avatar, location, username, tag, stats}) => {
         </div>
     )
 }
+
+Profile.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.shape({
+      city: PropTypes.string.isRequired,
+      country: PropTypes.string.isRequired,
+    }).isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.arrayOf(
+      PropTypes.shape({
+        key: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+      }).isRequired
+    )
+  }
+  
